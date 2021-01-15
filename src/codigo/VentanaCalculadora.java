@@ -30,6 +30,16 @@ public class VentanaCalculadora extends javax.swing.JFrame {
             display.setText(display.getText()+numero);
         }
     }
+    //la funcion que se encarga de trabjaar con la operacion pulsada
+    public void operacionPulsada(String _operacion){
+        //guardado el valor de la pantalla en la variable operando1
+        operando1 = Double.valueOf(display.getText());
+        
+        //pongo a cero la pantalla
+        display.setText("0");
+        //guardo la operacion que he pulsado
+        operacion= _operacion;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -341,23 +351,23 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_boton6ActionPerformed
 
     private void botonDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonDividirActionPerformed
-         escribeNumeroEnLaPantalla("/");
+         operacionPulsada("/");
     }//GEN-LAST:event_botonDividirActionPerformed
 
     private void BotonMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMultiplicarActionPerformed
-         escribeNumeroEnLaPantalla("*");
+         operacionPulsada("*");
     }//GEN-LAST:event_BotonMultiplicarActionPerformed
 
     private void BotonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonRestaActionPerformed
-         escribeNumeroEnLaPantalla("-");
+         operacionPulsada("-");
     }//GEN-LAST:event_BotonRestaActionPerformed
 
     private void BotonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSumaActionPerformed
-         escribeNumeroEnLaPantalla("+");
+         operacionPulsada("+");
     }//GEN-LAST:event_BotonSumaActionPerformed
 
     private void BotonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIgualActionPerformed
-         escribeNumeroEnLaPantalla("=");
+         operacionPulsada("=");
     }//GEN-LAST:event_BotonIgualActionPerformed
 
     private void boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton2ActionPerformed
