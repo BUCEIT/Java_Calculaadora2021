@@ -371,22 +371,22 @@ public class VentanaCalculadora extends javax.swing.JFrame {
        //como ese valor lo guarde en la variable operaacion
        //monto un if para que dependiendo del valor se realice ç
        //la operacion+
-       double operaando2 =Double.valueOf(display.getText());
+       double operando2 =Double.valueOf(display.getText());
         //si la operacion era la suma:
         if(operacion.equals("+")){
-            operando1= operando1 + operaando2;
+            operando1= operando1 + operando2;
         
          //si la operacion era resta
          if(operacion.equals("-")){
-            operando1 = operando1- operaando2;
+            operando1 = operando1 - operando2;
          }
          //si la operacion es multiplicaion
          if(operacion.equals("*")){
-             operando1 =operando1* operaando2;
+             operando1 =operando1 * operando2;
          }
          //si la operacion era division
          if(operacion.equals("/")){
-             operando1 = operando1/ operaando2;
+             operando1 = operando1 / operando2;
          }
          
         }
