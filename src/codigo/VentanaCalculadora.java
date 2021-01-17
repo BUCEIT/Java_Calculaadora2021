@@ -372,11 +372,12 @@ public class VentanaCalculadora extends javax.swing.JFrame {
        //monto un if para que dependiendo del valor se realice ç
        //la operacion+
        double operando2 =Double.valueOf(display.getText());
-        //si la operacion era la suma:
+        //si la operacion es la suma:
         if(operacion.equals("+")){
             operando1= operando1 + operando2;
+        }
         
-         //si la operacion era resta
+         //si la operacion es resta
          if(operacion.equals("-")){
             operando1 = operando1 - operando2;
          }
@@ -384,13 +385,11 @@ public class VentanaCalculadora extends javax.swing.JFrame {
          if(operacion.equals("*")){
              operando1 =operando1 * operando2;
          }
-         //si la operacion era division
+         //si la operacion es division
          if(operacion.equals("/")){
              operando1 = operando1 / operando2;
          }
-         
-        }
-        //por ultimo,muestro el resultado por pantall
+        //por ultimo,muestro el resultado por pantalla
         display.setText(String.valueOf(operando1));
     }//GEN-LAST:event_BotonIgualActionPerformed
 
